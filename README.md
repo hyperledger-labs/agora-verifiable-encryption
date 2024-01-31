@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/verenc.svg)](https://crates.io/crates/verenc)
 [![Documentation](https://docs.rs/verenc/badge.svg)](https://docs.rs/verenc)
-![License-Image](https://img.shields.io/badge/License-Apache%202.0-green.svg)
+![License-Image](https://img.shields.io/badge/License-Apache%202.0/MIT-green.svg)
 ![minimum rustc 1.50](https://img.shields.io/badge/rustc-1.50+-blue.svg)
 [![dependency status](https://deps.rs/repo/github/mikelodder7/verenc/status.svg)](https://deps.rs/repo/github/mikelodder7/verenc)
 
@@ -21,7 +21,12 @@ For a good read, see Thomas Pornin's [Why Constant-Time Crypto](https://www.bear
 
 ## License
 
-[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+Licensed under either of:
+
+* [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+* [MIT license](http://opensource.org/licenses/MIT)
+
+at your option.
 
 ## Contribution
 
