@@ -6,7 +6,6 @@
 //! <https://www.shoup.net/papers/verenc.pdf> and
 //! <https://dominoweb.draco.res.ibm.com/reports/rz3730_revised.pdf>
 
-#![no_std]
 #![deny(
     warnings,
     missing_docs,
@@ -17,13 +16,18 @@
 )]
 #![cfg_attr(docsrs, feature(doc_cfg))]
 
-#[cfg(feature = "alloc")]
-extern crate alloc;
-#[cfg(feature = "std")]
-#[macro_use]
-#[cfg_attr(feature = "wasm", macro_use)]
-extern crate std;
+//! Camenisch-Shoup verifiable encryption and decryption based on
+//! <https://www.shoup.net/papers/verenc.pdf> and
+//! <https://dominoweb.draco.res.ibm.com/reports/rz3730_revised.pdf>
+mod ciphertext;
+mod decryptionkey;
+mod encryptionkey;
+mod group;
+mod proof_verenc;
 
-#[cfg(feature = "std")]
-pub mod camshoup;
-pub mod elgamal;
+pub use ciphertext::*;
+pub use decryptionkey::*;
+pub use encryptionkey::*;
+pub use group::*;
+pub use proof_verenc::*;
+pub use unknown_order;

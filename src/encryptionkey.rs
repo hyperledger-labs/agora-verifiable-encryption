@@ -1,10 +1,6 @@
-use super::{DecryptionKey, Group, VerifiableCipherText, VerifiableEncryptionProof};
+use crate::{DecryptionKey, Group, VerifiableCipherText, VerifiableEncryptionProof};
 use serde::{Deserialize, Serialize};
-use std::{
-    fmt::{self, Display},
-    string::{String, ToString},
-    vec::Vec,
-};
+use std::fmt::{self, Display};
 use unknown_order::BigNumber;
 
 /// Key for Encrypting `VerifiableCipherText`

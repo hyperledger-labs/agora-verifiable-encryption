@@ -19,10 +19,6 @@ As such, this crate reexports `unknown_order` so consumers of this crate do not 
 Efforts have been made to mitigate some side channel attacks but ultimately there are many factors involved.
 For a good read, see Thomas Pornin's [Why Constant-Time Crypto](https://www.bearssl.org/constanttime.html) article.
 
-## FUTURE
-
-El-Gamal Ciphertexts support verifiable encryption and decryption and will be added soon.
-
 ## License
 
 Licensed under either of:

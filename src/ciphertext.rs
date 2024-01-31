@@ -1,5 +1,4 @@
 use serde::{Deserialize, Serialize};
-use std::vec::Vec;
 use unknown_order::BigNumber;
 
 /// Ciphertext that can be used to prove its verifiably encrypted or decrypted

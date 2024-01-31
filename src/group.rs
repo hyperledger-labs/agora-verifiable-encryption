@@ -1,9 +1,6 @@
-use super::{DecryptionKey, EncryptionKey};
+use crate::{DecryptionKey, EncryptionKey};
 use serde::{de::Error, Deserialize, Deserializer, Serialize, Serializer};
-use std::{
-    fmt::{self, Display},
-    vec::Vec,
-};
+use std::fmt::{self, Display};
 use unknown_order::BigNumber;
 use zeroize::Zeroize;
 

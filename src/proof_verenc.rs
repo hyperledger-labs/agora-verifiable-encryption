@@ -1,5 +1,4 @@
 use serde::{Deserialize, Serialize};
-use std::vec::Vec;
 use unknown_order::BigNumber;
 
 /// Proof verifiable encryption for discrete log
