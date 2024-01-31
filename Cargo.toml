@@ -1,0 +1,32 @@
+[package]
+authors = ["Michael Lodder <redmike7@gmail.com>"]
+categories = ["cryptography", "algorithms"]
+description = "An implementation of Camenisch Shoup verifiable encryption and decryption of discrete logs"
+documentation = "https://docs.rs/verenc"
+edition = "2018"
+license = "Apache-2.0 or MIT"
+name = "verenc"
+readme = "README.md"
+repository = "https://github.com/mikelodder7/verifiable-encryption"
+version = "0.1.0"
+
+[features]
+default = ["std"]
+alloc = ["openssl"]
+std = ["openssl"]
+gmp = ["unknown_order/gmp"]
+openssl = ["unknown_order/openssl"]
+rust = ["unknown_order/rust"]
+
+[dependencies]
+ff = "0.10"
+group = "0.10"
+merlin = "3.0"
+rand_core = "0.6"
+serde = { version = "1.0", features = ["serde_derive"] }
+unknown_order = { version = "0.3", default-features = false, optional = true }
+zeroize = { version = "1.4", features = ["zeroize_derive"] }
+
+[dev-dependencies]
+hex = "0.4"
+serde_json = "1.0"
